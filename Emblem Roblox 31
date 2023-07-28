@@ -1,0 +1,74 @@
+import turtle
+
+# Создаем экран для рисования
+screen = turtle.Screen()
+screen.bgcolor("white")
+
+# Создаем черепашку для рисования
+roblox_logo = turtle.Turtle()
+roblox_logo.shape("turtle")
+roblox_logo.color("#E01E23")
+
+# Рисуем букву "R"
+roblox_logo.penup()
+roblox_logo.goto(-200, 0)
+roblox_logo.pendown()
+roblox_logo.left(90)
+roblox_logo.forward(100)
+roblox_logo.right(90)
+roblox_logo.circle(-50, 180)
+roblox_logo.right(90)
+roblox_logo.forward(100)
+
+# Рисуем букву "O"
+roblox_logo.penup()
+roblox_logo.goto(-100, -50)
+roblox_logo.pendown()
+roblox_logo.circle(50)
+
+# Рисуем букву "B"
+roblox_logo.penup()
+roblox_logo.goto(0, 0)
+roblox_logo.pendown()
+roblox_logo.left(90)
+roblox_logo.forward(100)
+roblox_logo.right(90)
+roblox_logo.circle(-50, 180)
+roblox_logo.right(180)
+roblox_logo.circle(-50, 180)
+roblox_logo.left(90)
+roblox_logo.forward(100)
+
+# Рисуем букву "L"
+roblox_logo.penup()
+roblox_logo.goto(100, 0)
+roblox_logo.pendown()
+roblox_logo.left(90)
+roblox_logo.forward(100)
+roblox_logo.backward(100)
+roblox_logo.right(90)
+roblox_logo.forward(50)
+
+# Рисуем букву "O"
+roblox_logo.penup()
+roblox_logo.goto(150, -50)
+roblox_logo.pendown()
+roblox_logo.circle(50)
+
+# Рисуем букву "X"
+roblox_logo.penup()
+roblox_logo.goto(200, 0)
+roblox_logo.pendown()
+roblox_logo.right(45)
+roblox_logo.forward(70)
+roblox_logo.backward(140)
+roblox_logo.forward(70)
+roblox_logo.right(90)
+roblox_logo.forward(70)
+roblox_logo.backward(140)
+
+# Завершаем рисование и скрываем черепашку
+roblox_logo.hideturtle()
+
+# Закрываем экран после щелчка
+screen.exitonclick()
